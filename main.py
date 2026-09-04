@@ -1,7 +1,6 @@
 import datetime, os, platform, pwd
 
 def sbor_info_pc():
-    # Получаем имя пользователя надёжно
     try:
         username = os.getlogin()
     except OSError:
