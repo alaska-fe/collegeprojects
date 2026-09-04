@@ -32,6 +32,4 @@ def random_gen(first, second):
     result = first + (pseudo_random % dynamic_range)
     return result
 
-
-# Выведет только число-результат
 print(random_gen(2, 4))
