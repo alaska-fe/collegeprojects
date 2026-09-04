@@ -5,10 +5,7 @@ def sbor_info_pc():
     try:
         username = os.getlogin()
     except OSError:
-        # Если os.getlogin() падает, берём из переменных окружения
         username = os.getenv('USER') or os.getenv('LOGNAME') or 'unknown'
-    # Альтернатива: через pwd (если нужно, можно и так)
-    # username = pwd.getpwuid(os.getuid()).pw_name
 
     pc_data = f'{username}-{platform.node()}-{platform.processor()}'
     return abs(hash(pc_data))
