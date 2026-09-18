@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TaskManager.MainPage">
+
+    <VerticalStackLayout Spacing="20" Padding="30"
+                         VerticalOptions="Center">
+        <Label Text="Task Manager"
+               FontSize="32"
+               HorizontalOptions="Center" />
+
+        <Label Text="Практическая работа №1"
+               HorizontalOptions="Center" />
+
+        <Label Text="Студент: Бондаренко Т.Д., группа 361"
+               HorizontalOptions="Center" />
+
+        <Button x:Name="StartButton"
+                Text="Начать работу"
+                HorizontalOptions="Center"
+                Clicked="OnStartButtonClicked" />
+    </VerticalStackLayout>
+
+</ContentPage>
