@@ -31,5 +31,3 @@ def random_gen(first, second):
     pseudo_random = (combined_seed * 1103515245 + 12345) % (2 ** 31)
     result = first + (pseudo_random % dynamic_range)
     return result
-
-print(random_gen(2, 4))
